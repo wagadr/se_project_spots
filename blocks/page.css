@@ -1,0 +1,17 @@
+.page {
+  background-color: #fcf5e5;
+}
+
+@font-face {
+  font-family: "Poppins", "Arial", "Helvitica", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PPoppins", "Arial", "Helvitica", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/Poppins-Medium.ttf") format("truetype");
+}
