@@ -1,16 +1,23 @@
 .page {
   background-color: #fcf5e5;
+  min-height: 100vh;
+}
+
+
+.page__section {
+  margin: 0 auto;
+  max-width: 1280px;
 }
 
 @font-face {
-  font-family: "Poppins", "Arial", "Helvitica", sans-serif;
+  font-family: "Poppins", Arial, "Helvitica", sans-serif;
   font-style: normal;
   font-weight: 400;
   src: url("./fonts/Poppins-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "PPoppins", "Arial", "Helvitica", sans-serif;
+  font-family: "Poppins", Arial, "Helvitica", sans-serif;
   font-style: normal;
   font-weight: 500;
   src: url("./fonts/Poppins-Medium.ttf") format("truetype");
