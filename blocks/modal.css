@@ -30,6 +30,7 @@
 }
 
 .modal__close-button {
+  cursor: pointer;
   position: absolute;
   top: 32px;
   right: 50px;
@@ -44,10 +45,9 @@
   margin-top: 0;
   margin-bottom: 32px;
   font-weight: 500;
-  font-style: Medium;
   font-size: 32px;
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
 }
 
 .modal__form {
@@ -59,7 +59,7 @@
   display: block;
   width: 100%;
   margin: 8px 0 0;
-  width: 630px;
+  max-width: 630px;
   border-radius: 8px;
   padding: 16px 12px;
   gap: 10px;
@@ -78,8 +78,10 @@
 }
 
 .modal__submit-button {
+  cursor: pointer;
   max-width: 156px;
   height: 52px;
+  border: none;
   border-radius: 8px;
   padding: 18px 32px;
   gap: 8px;
@@ -110,12 +112,12 @@
 
   .modal__input {
     gap: 24px;
-    font-size: 24px;
+    font-size: 16px;
   }
 
   .modal__submit-button {
     width: 276px;
-    max-width: fill;
+    max-width: 100%;
     justify-content: center;
     margin-top: 24px;
   }
