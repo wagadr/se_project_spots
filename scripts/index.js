@@ -14,7 +14,7 @@ const newPostLinkInput = newPostModal.querySelector("#card-image-input");
 
 
 const profileNameElement = document.querySelector("profile__name");
-const profileDescriptionElement = document.querySelector("profile__description";)
+const profileDescriptionElement = document.querySelector("profile__description");
 
 
 
