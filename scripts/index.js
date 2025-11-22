@@ -36,7 +36,7 @@ editProfileCloseButton.addEventListener("click", function () {
   editProfileModal.classList.remove(".modal_is-opened");
 });
 
-function handleEditProfileSubmit {
+function handleEditProfileSubmit(evt) {
   evt.preventDefault();
   profileNameElement.textContent = editProfileNameInput.value;
   profileDescriptionElement.textContent = editProfileDescriptionInput.value;
