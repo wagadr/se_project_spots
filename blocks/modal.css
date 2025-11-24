@@ -1,4 +1,5 @@
 .modal {
+  padding: 0 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,6 +25,7 @@
   position: relative;
   max-width: 780px;
   width: 100%;
+  box-sizing: border-box;
   border-radius: 8px;
   background-color: #fff;
   padding: 32px 50px;
@@ -59,12 +61,12 @@
   display: block;
   width: 100%;
   margin: 8px 0 0;
-  max-width: 630px;
   border-radius: 8px;
   padding: 16px 12px;
   gap: 10px;
   opacity: 1;
   border-width: 1px;
+  box-sizing: border-box;
 }
 
 .modal__label {
@@ -100,12 +102,6 @@
 
 
 @media screen and (max-width: 630px) {
-  .modal__form {
-    max-width: 300px;
-    gap: 24px;
-    padding: 12px;
-  }
-
   .modal__title {
     font-size: 20px;
   }
@@ -116,9 +112,15 @@
   }
 
   .modal__submit-button {
-    width: 276px;
     max-width: 100%;
-    justify-content: center;
-    margin-top: 24px;
+  }
+
+  .modal__container {
+    padding: 22px 12px 12px;
+  }
+
+  .modal__close-button {
+    top: 12px;
+    right: 12px;
   }
 }
