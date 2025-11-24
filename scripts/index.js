@@ -30,11 +30,13 @@ newPostButton.addEventListener("click", function () {
 
 newPostCloseButton.addEventListener("click", function () {
   closeModal(newPostModal);
+});
 
 editProfileButton.addEventListener("click", function () {
   editProfileNameInput.value = profileNameElement.textContent;
   editProfileDescriptionInput.value = profileDescriptionElement.textContent;
   openModal(editProfileModal);
+});
 
 editProfileCloseButton.addEventListener("click", () => {
   closeModal(editProfileModal);
