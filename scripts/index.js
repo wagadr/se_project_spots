@@ -17,11 +17,11 @@ const profileNameElement = document.querySelector(".profile__name");
 const profileDescriptionElement = document.querySelector(".profile__description");
 
 function openModal(modal) {
-  modal.classList.add("modal_opened");
+  modal.classList.add("modal_is-opened");
 }
 
 function closeModal(modal) {
-  modal.classList.remove("modal_opened");
+  modal.classList.remove("modal_is-opened");
 }
 
 newPostButton.addEventListener("click", function () {
