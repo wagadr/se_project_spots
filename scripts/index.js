@@ -48,8 +48,8 @@ const newPostLinkInput = newPostModal.querySelector("#card-image-input");
 const profileNameElement = document.querySelector(".profile__name");
 const profileDescriptionElement = document.querySelector(".profile__description");
 
-const previewModal = document.querySelector("#previewModal");
-const previewModalCloseButton = previewModal.querySelector(".modal__close");
+const previewModal = document.querySelector("#preview-modal");
+const previewModalCloseButton = previewModal.querySelector(".modal__close-button");
 const previewImageElement = previewModal.querySelector(".modal__image");
 const previewCaptionElement = previewModal.querySelector(".modal__caption");
 
@@ -130,10 +130,7 @@ function handleAddCardSubmit(evt) {
   evt.preventDefault();
 
   console.log(newPostNameInput.value, newPostLinkInput.value);
-  const inputValues = getCardElement(
-    name: newPostNameInput.value,
-    link: newPostLinkInput.value,
-  );
+  const inputValues = getCardElement(item);
 
   const cardElmt = getCardElement(inputValues);
   cardsList.prepend(cardElmt);
