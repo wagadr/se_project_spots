@@ -60,7 +60,7 @@
     color: white;
     background-color: #212121;
     border-radius: 8px;
-    padding: 4px, 8px;
+    padding: 4px 8px;
     font-size: 20px;
   }
 
@@ -108,7 +108,6 @@
 .modal__label {
   margin: 0 0 32px;
   font-weight: 500;
-  font-style: Medium;
   font-size: 16px;
   line-height: 110%;
   letter-spacing: 0%;
@@ -156,7 +155,7 @@
   }
 }
 
-@media screen and (max-width 627px) {
+@media screen and (max-width: 627px) {
   .modal__close-button_type_preview {
   top: -48px;
   right: 0px;

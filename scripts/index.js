@@ -60,21 +60,21 @@ const cardsList = document.querySelector(".cards__list");
 
 function getCardElement(data) {
   const cardElement = cardTemplate.cloneNode(true);
-  const cardTitleELement = cardElement.querySelector(".card__title");
-  const cardImageELement = cardElement.querySelector(".card__image");
+  const cardTitleElement = cardElement.querySelector(".card__title");
+  const cardImageElement = cardElement.querySelector(".card__image");
 
-   cardImageELement.src = data.link;
-   cardTitleELement.alt = data.name;
-   cardTitleELement.textContent = data.name;
+   cardImageElement.src = data.link;
+   cardTitleElement.alt = data.name;
+   cardTitleElement.textContent = data.name;
 
   const cardLikedElement = cardElement.querySelector(".card__like-button");
   cardLikedElement.addEventListener("click", () => {
-    cardLikedElement.classList.toggle(".card__like-button_clicked")
+    cardLikedElement.classList.toggle("card__like-button_clicked")
   });
 
   const cardDeleteElement = cardElement.querySelector(".card__delete-button");
   cardDeleteElement.addEventListener("click", () => {
-      cardElement.remove;
+      cardElement.remove();
   });
 
   cardImageELement.addEventListener("click", () => {
@@ -130,12 +130,13 @@ function handleAddCardSubmit(evt) {
   evt.preventDefault();
 
   console.log(newPostNameInput.value, newPostLinkInput.value);
-  const inputValues = getCardElement(item);
-
+  const inputValues = getCardElement(data);
   const cardElmt = getCardElement(inputValues);
   cardsList.prepend(cardElmt);
 
   closeModal(newPostModal);
+
+  evt.target.reset();
 };
 
 addCardFormElement.addEventListener("submit", handleAddCardSubmit);
@@ -143,5 +144,4 @@ addCardFormElement.addEventListener("submit", handleAddCardSubmit);
 initialCards.forEach(function (item) {
   const cardElmt = getCardElement(item);
   cardsList.append(cardElmt);
-  getCardElement(item);
 });

@@ -59,11 +59,11 @@
       <form class="modal__form">
         <label for="profile-name-input" class="modal__label">
           Name
-          <input id="profile-name-input" type="text" class="modal__input" placeholder="Type your name"/>
+          <input required id="profile-name-input" type="text" class="modal__input" placeholder="Type your name"/>
         </label>
         <label for="profile-description-input" class="modal__label">
           Description
-          <input id="profile-description-input" type="text" class="modal__input" placeholder="Describe yourself"/>
+          <input required id="profile-description-input" type="text" class="modal__input" placeholder="Describe yourself"/>
         </label>
         <button class="modal__submit-button" type="submit">Save</button>
       </form>
@@ -76,11 +76,11 @@
       <form class="modal__form">
         <label for="card-image-input" class="modal__label">
           Image link
-          <input id="card-image-input" type="url" class="modal__input" placeholder="Paste a link to the picture"/>
+          <input required id="card-image-input" type="url" class="modal__input" placeholder="Paste a link to the picture"/>
         </label>
         <label for="card-caption-input" class="modal__label">
           Caption
-          <input id="card-caption-input" type="text" class="modal__input" placeholder="Type your caption"/>
+          <input requierd id="card-caption-input" type="text" class="modal__input" placeholder="Type your caption"/>
         </label>
         <button class="modal__submit-button" type="submit">Save</button>
       </form>
@@ -91,7 +91,7 @@
 <div class="modal" id="preview-modal">
     <div class="modal__image-container">
       <button class="modal__close-button modal__close-button_type_preview" type="button"></button>
-      <img src="#" class="modal__image"/>
+      <img src="#" class="modal__image" alt=""/>
       <p class="modal__caption"></p>
     </div>
   </div>
