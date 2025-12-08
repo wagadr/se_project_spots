@@ -77,7 +77,7 @@ function getCardElement(data) {
       cardElement.remove();
   });
 
-  cardImageELement.addEventListener("click", () => {
+  cardImageElement.addEventListener("click", () => {
     previewImageElement.src = data.link;
     previewCaptionElement.alt = data.name;
     previewCaptionElement.textContent = data.name;
