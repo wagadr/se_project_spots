@@ -62,6 +62,11 @@
     border-radius: 8px;
     padding: 4px 8px;
     font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: calc(100% + 10px);
+    margin: 0;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
   }
 
 .modal__close-button {
@@ -70,6 +75,7 @@
   }
 
 .modal__close-button_type_preview {
+    background-repeat: no-repeat;
     top: 0px;
     right: -52.5px;
     background-image: url(../images/preview-close.svg);
@@ -152,6 +158,14 @@
 
   .modal__container {
     padding: 22px 12px 12px;
+  }
+
+  .modal__image {
+    max-width: none;
+  }
+
+  .modal__caption {
+    font-size: 16px;
   }
 }
 

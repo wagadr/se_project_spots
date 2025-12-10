@@ -146,6 +146,8 @@ addCardFormElement.addEventListener("submit", function (evt){
 
   closeModal(newPostModal);
 
+  addCardFormElement.reset();
+
 });
 
 initialCards.forEach(function (item) {
