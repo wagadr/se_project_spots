@@ -94,13 +94,27 @@ function getCardElement(data) {
 
 };
 
+const handleModalClick = (event) => {
+  const modal = document.querySelector('.modal_is-opened');
+  if (event.target.classList.contains('modal')) closeModal(modal);
+};
+
+const handleModalEscape = (event) => {
+  const modal = document.querySelector('.modal_is-opened');
+  if (event.key === 'Escape') closeModal(modal);
+};
+
 function openModal(modal) {
   modal.classList.add("modal_is-opened");
-}
+  document.addEventListener('click', handleModalClick);
+  document.addEventListener('keyup', handleModalEscape);
+};
 
 function closeModal(modal) {
   modal.classList.remove("modal_is-opened");
-}
+  document.removeEventListener('click', handleModalClick);
+  document.removeEventListener('keyup', handleModalEscape);
+};
 
 newPostButton.addEventListener("click", function () {
   openModal(newPostModal);

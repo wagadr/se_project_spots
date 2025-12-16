@@ -1,8 +1,8 @@
-## Sprint 3 Stage 2 Project Spots
+## Sprint 6 Stage 9 Project Spots
 
-This project was intended to learn how to successfully use Figma to implement a design and learn how to create a functional responsive design.
+This project was intended to learn how to successfully make a functional webpage with the ability to edit and upload information and new cards, as well as validate newly inputted information and show clear, concise error messages on the user side to help resolve any issues.
 
-Advanced HTML and CSS techniques that were previously learned were combined with a new-to-me design tool (Figma) and new-to-me responsive design CSS (media-queries).
+The previous project (design only) was made into a functional, usable webpage using javascript.
 
 ## GitHub Pages
 
@@ -12,6 +12,7 @@ https://wagadr.github.io/se_project_spots
 
 Please see one of the below links to view my project pitch, where I outline purpose, address challenges, and share learning experiences.
 
-Loom project pitch: https://www.loom.com/share/bb80ec4616ed4a698845e9922b5f56e6
+Loom project pitch: https://www.loom.com/share/b022f30e099c4387b0cd549b37c8f650
 
-or Google Drive: https://drive.google.com/file/d/1ijTbrW4kEK26OVTRnZmF3NluEsJ7Z9h4/view
+or Google Drive: *****PLEASE READ*****
+LOOM WILL NOT ALLOW VIDEO TO BE DOWNLOADED WITHOUT PAYING FOR SUBSCRIPTION - PLEASE FOLLOW LOOM LINK
